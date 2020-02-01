@@ -1,7 +1,7 @@
 # Overview
 
 This is an Swift implementation of the card game set, which was invented by Marsha Jean Falco in 1974. Implementation uses 
-Swift 5 for IOS 13. Application primarely works best with iPhone X.
+Swift 5 for IOS 13. Application works primarely best with iPhone X.
 
 
 # Referenze 
