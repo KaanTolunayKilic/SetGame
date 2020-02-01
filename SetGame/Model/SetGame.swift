@@ -84,6 +84,7 @@ class SetGame {
         for _ in 0..<NEEDS_MATCHABLE_CARDS {
             addedCards.append(removeRandomCardFromDeck())
         }
+        playedCards += addedCards
         return addedCards
     }
     
