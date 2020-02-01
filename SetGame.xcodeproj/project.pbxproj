@@ -87,15 +87,12 @@
 		BC23834123E4F6F20098C9B5 /* SetGame */ = {
 			isa = PBXGroup;
 			children = (
-				BC23834223E4F6F20098C9B5 /* AppDelegate.swift */,
-				BC23834423E4F6F20098C9B5 /* SceneDelegate.swift */,
 				BC23834623E4F6F20098C9B5 /* ViewController.swift */,
 				BC23834823E4F6F20098C9B5 /* Main.storyboard */,
-				BC23834B23E4F6F40098C9B5 /* Assets.xcassets */,
-				BC23834D23E4F6F40098C9B5 /* LaunchScreen.storyboard */,
 				BC23835023E4F6F40098C9B5 /* Info.plist */,
 				BC8FB57523E5D59A00584C93 /* Model */,
 				BC8FB57C23E5DD9D00584C93 /* Extension */,
+				BC8FB58023E61FD700584C93 /* Supporting Files */,
 			);
 			path = SetGame;
 			sourceTree = "<group>";
@@ -133,6 +130,17 @@
 				BC23835923E4F6F50098C9B5 /* SetGameTests.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		BC8FB58023E61FD700584C93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC23834223E4F6F20098C9B5 /* AppDelegate.swift */,
+				BC23834423E4F6F20098C9B5 /* SceneDelegate.swift */,
+				BC23834B23E4F6F40098C9B5 /* Assets.xcassets */,
+				BC23834D23E4F6F40098C9B5 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
