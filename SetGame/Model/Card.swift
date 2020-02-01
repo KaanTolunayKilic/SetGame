@@ -28,7 +28,7 @@ struct Card: Equatable {
     enum Color: CardAttribute {
         case first, second, third
         
-        var all: [Card.Color] {
+        static var all: [Card.Color] {
             return [.first, .second, .third]
         }
     }
@@ -36,7 +36,7 @@ struct Card: Equatable {
     enum Shape: CardAttribute {
         case first, second, third
         
-        var all: [Card.Shape] {
+        static var all: [Card.Shape] {
             return [.first, .second, .third]
         }
     }
@@ -44,7 +44,7 @@ struct Card: Equatable {
     enum Fill: CardAttribute {
         case first, second, third
         
-        var all: [Card.Fill] {
+        static var all: [Card.Fill] {
             return [.first, .second, .third]
         }
     }
@@ -52,7 +52,7 @@ struct Card: Equatable {
     enum Amount: CardAttribute {
         case first, second, third
         
-        var all: [Card.Amount] {
+        static var all: [Card.Amount] {
             return [.first, .second, .third]
         }
     }

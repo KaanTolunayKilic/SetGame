@@ -9,5 +9,5 @@
 import Foundation
 
 protocol CardAttribute {
-    var all: [Self] { get }
+    static var all: [Self] { get }
 }
