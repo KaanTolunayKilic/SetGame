@@ -17,6 +17,12 @@ class SetGame {
     private(set) var selectedCards = [Card]()
     private(set) var matchedCards = [Card]()
     
+    init(cardsAtStart amount: Int) {
+        for _ in 0..<amount {
+            playedCards.append(removeRandomCardFromDeck())
+        }
+    }
+    
     func chooseCard(atIndex index: Int) -> Void {
         assert(index >= 0 && index <= playedCards.count)
         
@@ -73,6 +79,13 @@ class SetGame {
             fills.count != 2 &&
             amounts.count != 2
         )
+    }
+    
+    func restart() {
+        deck = SetGame.createDeck()
+        playedCards.removeAll()
+        selectedCards.removeAll()
+        matchedCards.removeAll()
     }
     
     // MARK: private functions

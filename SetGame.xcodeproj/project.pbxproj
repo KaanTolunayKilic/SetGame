@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC0BAE6523E77EAD003919D2 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0BAE6423E77EAD003919D2 /* CardView.swift */; };
 		BC23834323E4F6F20098C9B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23834223E4F6F20098C9B5 /* AppDelegate.swift */; };
 		BC23834523E4F6F20098C9B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23834423E4F6F20098C9B5 /* SceneDelegate.swift */; };
 		BC23834723E4F6F20098C9B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC23834623E4F6F20098C9B5 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC0BAE6423E77EAD003919D2 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		BC23833F23E4F6F20098C9B5 /* SetGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC23834223E4F6F20098C9B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC23834423E4F6F20098C9B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC0BAE6323E77E87003919D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC0BAE6423E77EAD003919D2 /* CardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		BC23833623E4F6F10098C9B5 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +101,7 @@
 				BC23834823E4F6F20098C9B5 /* Main.storyboard */,
 				BC23835023E4F6F40098C9B5 /* Info.plist */,
 				BC8FB57523E5D59A00584C93 /* Model */,
+				BC0BAE6323E77E87003919D2 /* View */,
 				BC8FB57C23E5DD9D00584C93 /* Extension */,
 				BC8FB58023E61FD700584C93 /* Supporting Files */,
 			);
@@ -250,6 +261,7 @@
 				BC23834323E4F6F20098C9B5 /* AppDelegate.swift in Sources */,
 				BC23834523E4F6F20098C9B5 /* SceneDelegate.swift in Sources */,
 				BC8FB57B23E5D9DC00584C93 /* SetGame.swift in Sources */,
+				BC0BAE6523E77EAD003919D2 /* CardView.swift in Sources */,
 				BC8FB57723E5D5C000584C93 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
