@@ -62,10 +62,10 @@ class SetGame {
         let secondCard = selectedCards[1]
         let thirdCard = selectedCards[2]
         
-        let colors = [firstCard.color, secondCard.color, thirdCard.color]
-        let shapes = [firstCard.shape, secondCard.shape, thirdCard.shape]
-        let fills = [firstCard.fill, secondCard.fill, thirdCard.fill]
-        let amounts = [firstCard.amount, secondCard.amount, thirdCard.amount]
+        let colors: Set<Card.Color> = [firstCard.color, secondCard.color, thirdCard.color]
+        let shapes: Set<Card.Shape> = [firstCard.shape, secondCard.shape, thirdCard.shape]
+        let fills: Set<Card.Fill> = [firstCard.fill, secondCard.fill, thirdCard.fill]
+        let amounts: Set<Card.Amount> = [firstCard.amount, secondCard.amount, thirdCard.amount]
         
         return (
             colors.count != 2 &&
