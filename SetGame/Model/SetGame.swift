@@ -96,6 +96,7 @@ class SetGame {
         playedCards.removeAll()
         selectedCards.removeAll()
         matchedCards.removeAll()
+        score = 0
     }
     
     // MARK: private functions
