@@ -43,7 +43,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func touchDeal3MoreCards(_ sender: UIButton) {
-        if setGame.playedCards.count < 24 {
+        if setGame.playedCards.count < 24 && !setGame.isDeckEmpty {
             _ = setGame.deal3Cards()
             updateViewFromModel()
         }
@@ -73,6 +73,7 @@ class ViewController: UIViewController {
         
         cardViews[index].backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         cardViews[index].layer.borderWidth = 5
+        cardViews[index].layer.cornerRadius = 5
         
         if let isMatch = setGame.hasMatch(), setGame.selectedCards.contains(cardModel) {
             cardViews[index].layer.borderColor =  isMatch ? #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1) : #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
@@ -118,7 +119,7 @@ class ViewController: UIViewController {
         cardViews[index].isEnabled = true
         
         
-        deal3MoreCardsButton.isEnabled = setGame.playedCards.count < cardViews.count
+        deal3MoreCardsButton.isEnabled = setGame.playedCards.count < cardViews.count && !setGame.isDeckEmpty
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
@@ -132,6 +133,8 @@ class ViewController: UIViewController {
         cardViews[index].setTitle("", for: .normal)
         cardViews[index].setAttributedTitle(NSAttributedString(), for: .normal)
         cardViews[index].isEnabled = false
+        cardViews[index].layer.borderWidth = 0
+        cardViews[index].layer.cornerRadius = 0
     }
 }
 

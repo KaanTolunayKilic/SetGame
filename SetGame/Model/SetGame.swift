@@ -9,9 +9,13 @@
 import Foundation
 
 class SetGame {
+    private let IS_DEBUG = false
+    
     private let NEEDS_MATCHABLE_CARDS = 3
     
     private var deck: [Card] = SetGame.createDeck()
+    
+    var isDeckEmpty: Bool { return deck.isEmpty }
     
     private(set) var playedCards = [Card]()
     private(set) var selectedCards = [Card]()
@@ -37,7 +41,7 @@ class SetGame {
         } else {
             if let isMatch = hasMatch(), isMatch {
                 matchedCards += selectedCards
-                _ = deal3Cards()
+                _ = replaceMatchedCards()
             }
             
             selectedCards.removeAll()
@@ -78,7 +82,7 @@ class SetGame {
             shapes.count != 2 &&
             fills.count != 2 &&
             amounts.count != 2
-        )
+        ) || IS_DEBUG
     }
     
     func restart() {
@@ -103,15 +107,19 @@ class SetGame {
     
     private func replaceMatchedCards() -> [Card] {
         assert(hasMatch()!)
+        assert(selectedCards.count == 3)
         
         var replacedCards = [Card]()
         for selectedCard in selectedCards {
             let index = playedCards.firstIndex(of: selectedCard)!
-            let randomCard = removeRandomCardFromDeck()
             playedCards.remove(at: index)
-            playedCards.insert(randomCard, at: index)
-            replacedCards.append(randomCard)
+            if !deck.isEmpty {
+                let randomCard = removeRandomCardFromDeck()
+                playedCards.insert(randomCard, at: index)
+                replacedCards.append(randomCard)
+            }
         }
+        selectedCards.removeAll()
         return replacedCards
     }
     
