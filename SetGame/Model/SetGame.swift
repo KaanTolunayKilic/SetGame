@@ -57,14 +57,14 @@ class SetGame {
         }
     }
     
-    func deal3Cards() -> [Card] {
+    func deal3Cards() {
         assert(deck.count >= NEEDS_MATCHABLE_CARDS)
         
         if let isMatch = hasMatch(), isMatch {
-            return replaceMatchedCards()
+            replaceMatchedCards()
         }
         
-        return addRandomCards()
+        addRandomCards()
     }
     
     func hasMatch() -> Bool? {
@@ -100,33 +100,27 @@ class SetGame {
     
     // MARK: private functions
     
-    private func addRandomCards() -> [Card] {
+    private func addRandomCards() {
         assert(hasMatch() == nil || hasMatch()! == false)
         
-        var addedCards = [Card]()
         for _ in 0..<NEEDS_MATCHABLE_CARDS {
-            addedCards.append(removeRandomCardFromDeck())
+            playedCards.append(removeRandomCardFromDeck())
         }
-        playedCards += addedCards
-        return addedCards
     }
     
-    private func replaceMatchedCards() -> [Card] {
+    private func replaceMatchedCards() {
         assert(hasMatch()!)
         assert(selectedCards.count == 3)
         
-        var replacedCards = [Card]()
         for selectedCard in selectedCards {
             let index = playedCards.firstIndex(of: selectedCard)!
             playedCards.remove(at: index)
             if !deck.isEmpty {
                 let randomCard = removeRandomCardFromDeck()
                 playedCards.insert(randomCard, at: index)
-                replacedCards.append(randomCard)
             }
         }
         selectedCards.removeAll()
-        return replacedCards
     }
     
     private func removeRandomCardFromDeck() -> Card {
