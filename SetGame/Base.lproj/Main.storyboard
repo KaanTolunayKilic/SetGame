@@ -17,34 +17,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="nc8-TP-gzb">
-                                <rect key="frame" x="20" y="44" width="374" height="768"/>
+                                <rect key="frame" x="20" y="82" width="374" height="730"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="RhQ-9Y-NsO">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VOP-9O-U3R" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52Q-Ku-d5V"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgj-JM-frp" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BaR-GQ-v7a"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RC-oV-L7g" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ggh-gj-T1t"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7St-d9-QID" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CSP-Yo-dJm"/>
@@ -53,31 +53,31 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1Mc-af-h1F">
-                                        <rect key="frame" x="0.0" y="129.5" width="374" height="121"/>
+                                        <rect key="frame" x="0.0" y="123" width="374" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFp-CU-5ux" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUA-cv-Gb0"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWP-uP-oXj" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KCU-oy-QgE"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cI9-JV-gUi" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63e-K3-l6Q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B9D-qG-VFx" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oDR-mo-EDE"/>
@@ -86,31 +86,31 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DcS-8l-5iQ">
-                                        <rect key="frame" x="0.0" y="258.5" width="374" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="246" width="374" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8c-GF-iMN" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WMc-Ji-YIv"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-8J-wmB" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KU8-oC-hn8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxh-TQ-092" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hli-4S-kvw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6n-I3-92i" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wl4-zK-Ryo"/>
@@ -119,31 +119,31 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dhS-yz-TUU">
-                                        <rect key="frame" x="0.0" y="388" width="374" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="369" width="374" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqn-VV-w09" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cWp-aH-nPc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QCv-s0-mTp" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jwy-ab-wcP"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcG-Ge-prZ" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yx1-WX-K07"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-0W-7QC" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4d-xK-wkT"/>
@@ -152,31 +152,31 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Fii-ey-rmh">
-                                        <rect key="frame" x="0.0" y="517.5" width="374" height="121"/>
+                                        <rect key="frame" x="0.0" y="492" width="374" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdH-3c-Ki7" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsg-II-71S"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d3x-3L-7f9" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1gt-fA-6zM"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VU8-gl-3OE" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Jo-Qd-xCY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBt-Ef-MHG" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="121"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uuf-ra-eKs"/>
@@ -185,31 +185,31 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lB4-t8-osy">
-                                        <rect key="frame" x="0.0" y="646.5" width="374" height="121.5"/>
+                                        <rect key="frame" x="0.0" y="615" width="374" height="115"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5Q-SS-GP3" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g71-To-ms6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RsU-vQ-dqc" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="95.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Hd-d7-aYc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gql-Tc-RbV" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="191" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="191" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ar3-ro-Qd6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5k6-cE-uSP" customClass="CardView" customModule="SetGame" customModuleProvider="target">
-                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="121.5"/>
+                                                <rect key="frame" x="286.5" y="0.0" width="87.5" height="115"/>
                                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="touchedCardView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vrd-Gf-x4R"/>
@@ -252,21 +252,31 @@
                                     <constraint firstAttribute="height" constant="42" id="aaf-xJ-MnU"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4P-9X-Mej">
+                                <rect key="frame" x="20" y="44" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.93771364430924653" green="0.94699793781725883" blue="0.94699793781725883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sTW-bq-tKc" secondAttribute="bottom" id="0Z2-af-qvS"/>
                             <constraint firstItem="nc8-TP-gzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9n0-bU-pAB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sTW-bq-tKc" secondAttribute="trailing" constant="20" id="Ih3-km-o41"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A4P-9X-Mej" secondAttribute="trailing" constant="20" id="KcO-p9-ucp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nc8-TP-gzb" secondAttribute="trailing" constant="20" id="TW4-DI-LV3"/>
-                            <constraint firstItem="nc8-TP-gzb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="UOQ-ty-Oyt"/>
+                            <constraint firstItem="nc8-TP-gzb" firstAttribute="top" secondItem="A4P-9X-Mej" secondAttribute="bottom" constant="8" symbolic="YES" id="ao9-Hc-wkN"/>
                             <constraint firstItem="sTW-bq-tKc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iGK-fy-HUX"/>
+                            <constraint firstItem="A4P-9X-Mej" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="iKk-28-hdc"/>
                             <constraint firstItem="sTW-bq-tKc" firstAttribute="top" secondItem="nc8-TP-gzb" secondAttribute="bottom" constant="8" symbolic="YES" id="kJd-Be-UQg"/>
+                            <constraint firstItem="A4P-9X-Mej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ths-Lu-gqD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="deal3MoreCardsButton" destination="Byg-11-oj0" id="7EZ-d1-s75"/>
+                        <outlet property="scoreLabel" destination="A4P-9X-Mej" id="w07-mj-x2N"/>
                         <outletCollection property="cardViews" destination="VOP-9O-U3R" collectionClass="NSMutableArray" id="W4T-tb-QZ2"/>
                         <outletCollection property="cardViews" destination="Jgj-JM-frp" collectionClass="NSMutableArray" id="y7t-zl-BqI"/>
                         <outletCollection property="cardViews" destination="4RC-oV-L7g" collectionClass="NSMutableArray" id="g4X-Tj-hQw"/>

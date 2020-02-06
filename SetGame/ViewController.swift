@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     private var setGame = SetGame(cardsAtStart: 12)
     
+    @IBOutlet weak var scoreLabel: UILabel!
+    
     @IBOutlet var cardViews: [CardView]!
     
     @IBOutlet weak var deal3MoreCardsButton: UIButton! {
@@ -63,6 +65,8 @@ class ViewController: UIViewController {
                 hideCardAtIndex(index)
             }
         }
+        deal3MoreCardsButton.isEnabled = setGame.playedCards.count < cardViews.count && !setGame.isDeckEmpty
+        scoreLabel.text = "Score: \(setGame.score)"
     }
     
     private func showCardAtIndex(_ index: Int) {
@@ -117,9 +121,6 @@ class ViewController: UIViewController {
         let attributedString = NSMutableAttributedString(string: symbole, attributes: attributes)
         cardViews[index].setAttributedTitle(attributedString, for: .normal)
         cardViews[index].isEnabled = true
-        
-        
-        deal3MoreCardsButton.isEnabled = setGame.playedCards.count < cardViews.count && !setGame.isDeckEmpty
     }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {

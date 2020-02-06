@@ -21,6 +21,8 @@ class SetGame {
     private(set) var selectedCards = [Card]()
     private(set) var matchedCards = [Card]()
     
+    private(set) var score: Int = 0
+    
     init(cardsAtStart amount: Int) {
         for _ in 0..<amount {
             playedCards.append(removeRandomCardFromDeck())
@@ -35,6 +37,7 @@ class SetGame {
         if selectedCards.count < 3 {
             if let indexOfSelectedCard = selectedCards.firstIndex(of: choosenCard) {
                 selectedCards.remove(at: indexOfSelectedCard)
+                score -= 1
             } else {
                 selectedCards.append(choosenCard)
             }
@@ -42,6 +45,9 @@ class SetGame {
             if let isMatch = hasMatch(), isMatch {
                 matchedCards += selectedCards
                 _ = replaceMatchedCards()
+                score += 5
+            } else {
+                score -= 3
             }
             
             selectedCards.removeAll()
