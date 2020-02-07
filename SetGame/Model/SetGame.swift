@@ -8,9 +8,9 @@
 
 import Foundation
 
-class SetGame {
-    private let IS_DEBUG = false
-    
+class SetGame
+{
+    private let DEBUG_MODE = false
     private let NEEDS_MATCHABLE_CARDS = 3
     
     private var deck: [Card] = SetGame.createDeck()
@@ -22,6 +22,8 @@ class SetGame {
     private(set) var matchedCards = [Card]()
     
     private(set) var score: Int = 0
+    
+    private(set) var bot: Bot?
     
     init(cardsAtStart amount: Int) {
         for _ in 0..<amount {
@@ -44,7 +46,7 @@ class SetGame {
         } else {
             if let isMatch = hasMatch(), isMatch {
                 matchedCards += selectedCards
-                _ = replaceMatchedCards()
+                replaceMatchedCards()
                 score += 5
             } else {
                 score -= 3
@@ -74,21 +76,27 @@ class SetGame {
             return nil
         }
         
-        let firstCard = selectedCards[0]
-        let secondCard = selectedCards[1]
-        let thirdCard = selectedCards[2]
-        
-        let colors: Set<Card.Color> = [firstCard.color, secondCard.color, thirdCard.color]
-        let shapes: Set<Card.Shape> = [firstCard.shape, secondCard.shape, thirdCard.shape]
-        let fills: Set<Card.Fill> = [firstCard.fill, secondCard.fill, thirdCard.fill]
-        let amounts: Set<Card.Amount> = [firstCard.amount, secondCard.amount, thirdCard.amount]
+        return SetGame.isMatch(
+                    first: selectedCards[0],
+                    second: selectedCards[1],
+                    third: selectedCards[2]
+                )
+                ||
+                DEBUG_MODE
+    }
+    
+    private static func isMatch(first: Card, second: Card, third: Card) -> Bool {
+        let colors: Set<Card.Color> = [first.color, second.color, third.color]
+        let shapes: Set<Card.Shape> = [first.shape, second.shape, third.shape]
+        let fills: Set<Card.Fill> = [first.fill, second.fill, third.fill]
+        let amounts: Set<Card.Amount> = [first.amount, second.amount, third.amount]
         
         return (
             colors.count != 2 &&
             shapes.count != 2 &&
             fills.count != 2 &&
             amounts.count != 2
-        ) || IS_DEBUG
+        )
     }
     
     func restart() {
@@ -97,6 +105,71 @@ class SetGame {
         selectedCards.removeAll()
         matchedCards.removeAll()
         score = 0
+        bot = bot != nil ? Bot(game: self) : nil
+    }
+    
+    func createBot() -> Bot {
+        bot = Bot(game: self)
+        return bot!
+    }
+    
+    class Bot {
+        private let game: SetGame
+        private var sets = [[Card]]()
+        private var score = 0
+        
+        var hasNoSet: Bool {
+            return sets.isEmpty
+        }
+        
+        init(game: SetGame) {
+            self.game = game
+        }
+        
+        func clearSets() {
+            sets.removeAll()
+        }
+        
+        func findSets() -> Bool {
+            var found = false
+            for first in game.playedCards.indices {
+                for second in game.playedCards.indices[(first+1)...] {
+                    for third in game.playedCards.indices[(second+1)...] {
+                        if SetGame.isMatch(
+                            first: game.playedCards[first],
+                            second: game.playedCards[second],
+                            third: game.playedCards[third]
+                        ) {
+                            let set = [game.playedCards[first], game.playedCards[second], game.playedCards[third]]
+                            sets.append(set)
+                            found = true
+                        }
+                    }
+                }
+            }
+            return found
+        }
+        
+        func removeRandomSet() -> Bool {
+            while sets.count > 0 {
+                let randomSet = sets.remove(at: sets.count.arc4randomNumber)
+                let isAlreadyMatched = randomSet.reduce(false, {$0 || game.hasMatch() == true || game.selectedCards.contains($1)})
+                if !isAlreadyMatched {
+                    for card in randomSet {
+                        if let indexOfSelectedCard = game.selectedCards.firstIndex(of: card) {
+                            game.selectedCards.remove(at: indexOfSelectedCard)
+                        }
+                        
+                        let removedCard = game.playedCards.remove(at: game.playedCards.firstIndex(of: card)!)
+                        game.matchedCards.append(removedCard)
+                    }
+                    score += 5
+                    return true
+                }
+            }
+            score -= 3
+            return false
+        }
     }
     
     // MARK: private functions

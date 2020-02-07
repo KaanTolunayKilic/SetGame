@@ -13,7 +13,7 @@ class SinglePlayerSetGameViewController: UIViewController {
     let FONT_SIZE: CGFloat = 24
     let CARDS_AT_START: Int = 12
     
-    private var setGame = SetGame(cardsAtStart: 12)
+    var setGame = SetGame(cardsAtStart: 12)
     
     @IBOutlet weak var scoreLabel: UILabel!
     

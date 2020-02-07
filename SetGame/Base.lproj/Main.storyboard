@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Single Player Set Game View Controller-->
+        <!--Bot Vs Player Set Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="SinglePlayerSetGameViewController" customModule="SetGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BotVsPlayerSetGameViewController" customModule="SetGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +253,13 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4P-9X-Mej">
-                                <rect key="frame" x="20" y="44" width="374" height="30"/>
+                                <rect key="frame" x="20" y="44" width="90" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🧐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpd-FK-d9U">
+                                <rect key="frame" x="366" y="44" width="28" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -262,9 +268,10 @@
                         <color key="backgroundColor" red="0.93771364430924653" green="0.94699793781725883" blue="0.94699793781725883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sTW-bq-tKc" secondAttribute="bottom" id="0Z2-af-qvS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rpd-FK-d9U" secondAttribute="trailing" constant="20" id="3vo-pE-0Hx"/>
                             <constraint firstItem="nc8-TP-gzb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9n0-bU-pAB"/>
+                            <constraint firstItem="Rpd-FK-d9U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="EUF-pd-RTY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sTW-bq-tKc" secondAttribute="trailing" constant="20" id="Ih3-km-o41"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A4P-9X-Mej" secondAttribute="trailing" constant="20" id="KcO-p9-ucp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nc8-TP-gzb" secondAttribute="trailing" constant="20" id="TW4-DI-LV3"/>
                             <constraint firstItem="nc8-TP-gzb" firstAttribute="top" secondItem="A4P-9X-Mej" secondAttribute="bottom" constant="8" symbolic="YES" id="ao9-Hc-wkN"/>
                             <constraint firstItem="sTW-bq-tKc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iGK-fy-HUX"/>
@@ -275,6 +282,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="botReaktionLabel" destination="Rpd-FK-d9U" id="B2H-Ej-RqG"/>
                         <outlet property="deal3MoreCardsButton" destination="Byg-11-oj0" id="7EZ-d1-s75"/>
                         <outlet property="scoreLabel" destination="A4P-9X-Mej" id="w07-mj-x2N"/>
                         <outletCollection property="cardViews" destination="VOP-9O-U3R" collectionClass="NSMutableArray" id="W4T-tb-QZ2"/>

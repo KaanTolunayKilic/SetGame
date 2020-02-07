@@ -19,6 +19,7 @@
 		BC8FB57923E5D81A00584C93 /* CardAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FB57823E5D81A00584C93 /* CardAttribute.swift */; };
 		BC8FB57B23E5D9DC00584C93 /* SetGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FB57A23E5D9DC00584C93 /* SetGame.swift */; };
 		BC8FB57E23E5DDB700584C93 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8FB57D23E5DDB700584C93 /* IntExtension.swift */; };
+		BCD92BBD23ECDFC100D1A42D /* BotVsPlayerSetGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD92BBC23ECDFC100D1A42D /* BotVsPlayerSetGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BC8FB57823E5D81A00584C93 /* CardAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAttribute.swift; sourceTree = "<group>"; };
 		BC8FB57A23E5D9DC00584C93 /* SetGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetGame.swift; sourceTree = "<group>"; };
 		BC8FB57D23E5DDB700584C93 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		BCD92BBC23ECDFC100D1A42D /* BotVsPlayerSetGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotVsPlayerSetGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		BC23834123E4F6F20098C9B5 /* SetGame */ = {
 			isa = PBXGroup;
 			children = (
+				BCD92BBC23ECDFC100D1A42D /* BotVsPlayerSetGameViewController.swift */,
 				BC23834623E4F6F20098C9B5 /* SinglePlayerSetGameViewController.swift */,
 				BC23834823E4F6F20098C9B5 /* Main.storyboard */,
 				BC23835023E4F6F40098C9B5 /* Info.plist */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD92BBD23ECDFC100D1A42D /* BotVsPlayerSetGameViewController.swift in Sources */,
 				BC8FB57E23E5DDB700584C93 /* IntExtension.swift in Sources */,
 				BC23834723E4F6F20098C9B5 /* SinglePlayerSetGameViewController.swift in Sources */,
 				BC8FB57923E5D81A00584C93 /* CardAttribute.swift in Sources */,
